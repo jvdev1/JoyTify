@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relay"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    local:MvxBind="Click ShowCommand"
+    >
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="320dp"
+      android:layout_height="180dp"
+      android:background="@android:color/holo_blue_bright"
+      android:layout_alignParentRight="true" />
+  <TextView
+      android:id="@+id/tvTitle"
+      android:text="Large Text"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/primary_text_dark"
+      android:singleLine="false"
+      android:layout_marginLeft="5dp"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      local:MvxBind="Text Title" />
+  <TextView
+      android:id="@+id/tvDur"
+      android:text="Text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true" />
+  <TextView
+      android:id="@+id/tvCha"
+      android:text="Text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/tvInList"
+      android:text="Text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:layout_above="@id/tvCha"
+      android:textSize="16sp" />
+</RelativeLayout>
